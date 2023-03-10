@@ -18,7 +18,11 @@
     "lint:eslint": "eslint --fix --ext .js,.ts,.tsx ./src --max-warnings=0",
     "pre-check": "tsc && npx lint-staged",
     "commit": "git pull && git add -A && git push",
-    "release": "standard-version"
+    "release-major": "standard-version --release-as major",
+    "release-minor": "standard-version --release-as minor",
+    "release-patch": "standard-version --release-as patch",
+    "release": "standard-version",
+    "release-static": "standard-version --release-as 3.3.3"
   },
   "keywords": [],
   "author": "",
@@ -107,7 +111,7 @@
   },
   "config": {
     "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
+      "path": "node_modules/cz-conventional-changelog"
     }
   }
 }
