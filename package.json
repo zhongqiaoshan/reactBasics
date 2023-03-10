@@ -19,6 +19,11 @@
     "pre-check": "tsc && npx lint-staged"
   },
   "keywords": [],
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-git"
+    }
+  },
   "author": "",
   "license": "ISC",
   "dependencies": {
@@ -48,12 +53,14 @@
     "@typescript-eslint/parser": "^5.54.1",
     "autoprefixer": "^10.4.13",
     "babel-loader": "^9.1.2",
+    "commitizen": "^4.3.0",
     "compression-webpack-plugin": "^10.0.0",
     "copy-webpack-plugin": "^11.0.0",
     "core-js": "^3.29.0",
     "cross-env": "^7.0.3",
     "css-loader": "^6.7.3",
     "css-minimizer-webpack-plugin": "^4.2.2",
+    "cz-git": "^1.5.3",
     "eslint": "^8.35.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-prettier": "^8.7.0",
