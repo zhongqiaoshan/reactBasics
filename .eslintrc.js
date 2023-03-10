@@ -2,22 +2,22 @@ module.exports = {
   env: {
     browser: true,
     es2021: true,
-    node: true,
+    node: true
   },
   extends: [
     'airbnb-base',
     'eslint:recommended',
     'plugin:import/recommended',
     'plugin:@typescript-eslint/recommended',
-    'plugin:prettier/recommended', // <==== 增加一行
+    'plugin:prettier/recommended' // <==== 增加一行
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaFeatures: {
-      jsx: true,
+      jsx: true
     },
     ecmaVersion: 'latest',
-    sourceType: 'module',
+    sourceType: 'module'
   },
   plugins: ['react', '@typescript-eslint'],
   rules: {
@@ -50,9 +50,9 @@ module.exports = {
         js: 'never',
         jsx: 'never',
         ts: 'never',
-        tsx: 'never',
-      },
-    ],
+        tsx: 'never'
+      }
+    ]
     // "no-var": "error", // 要求使用 let 或 const 而不是 var
     // "no-multiple-empty-lines": ["error", { max: 1 }], // 不允许多个空行
     // "no-use-before-define": "off", // 禁止在 函数/类/变量 定义之前使用它们
@@ -81,18 +81,18 @@ module.exports = {
   },
   settings: {
     react: {
-      version: 'detect',
+      version: 'detect'
     },
     'import/extensions': ['.js', '.jsx', '.ts', '.tsx'],
     'import/parsers': {
-      '@typescript-eslint/parser': ['.ts', '.tsx'],
+      '@typescript-eslint/parser': ['.ts', '.tsx']
     },
     'import/resolver': {
       node: {
         paths: ['src'],
         extensions: ['.js', '.jsx', '.ts', '.tsx'],
-        moduleDirectory: ['node_modules', 'src/'],
-      },
-    },
-  },
-};
+        moduleDirectory: ['node_modules', 'src/']
+      }
+    }
+  }
+}
