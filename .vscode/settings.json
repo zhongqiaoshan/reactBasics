@@ -1,0 +1,7 @@
+{
+  "eslint.enable": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "stylelint.validate": ["css", "less", "sass", "stylus", "postcss"]
+}
